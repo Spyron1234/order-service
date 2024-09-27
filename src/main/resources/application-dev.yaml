@@ -1,0 +1,20 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: order-service
+  config:
+    import: configserver:http://localhost:8888
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+app:
+  data:
+    name: C_APP
+    loc: GERMANY
+    price: 23.90
+    sector:
+    - A12
+    - B23
