@@ -1,5 +1,5 @@
 server:
-  port: 8084
+  port: 8085
 spring:
   application:
     name: order-service
@@ -10,11 +10,3 @@ management:
     web:
       exposure:
         include: refresh
-app:
-  data:
-    name: C_APP_TEST
-    loc: GERMANY
-    price: 23.90
-    sector:
-    - A12
-    - B23

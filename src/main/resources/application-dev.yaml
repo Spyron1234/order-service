@@ -1,10 +1,10 @@
 server:
-  port: 8084
+  port: 8085
 spring:
   application:
     name: order-service
   config:
-    import: configserver:http://localhost:8888
+    import: configserver:http://localhost:8889
 management:
   endpoints:
     web:

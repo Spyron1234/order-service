@@ -15,6 +15,6 @@ public class OrderController {
 
 	@GetMapping("/loc")
 	public String details() {
-		return locationConfig.getName();
+		return locationConfig.getName() != null ? locationConfig.getName() : "KIOL";
 	}
 }
