@@ -12,13 +12,9 @@ public class OrderController {
 	
 	@Autowired
 	LocationConfig locationConfig;
-	
-	@Autowired
-	DataConfig dataConfig;
 
 	@GetMapping("/loc")
 	public String details() {
-		System.err.println(dataConfig);
 		return locationConfig.getName();
 	}
 }

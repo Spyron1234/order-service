@@ -10,11 +10,3 @@ management:
     web:
       exposure:
         include: refresh
-app:
-  data:
-    name: C_APP
-    loc: GERMANY
-    price: 23.90
-    sector:
-    - A12
-    - B23
