@@ -15,8 +15,11 @@ spring:
   application:
     name: order-service
   config:
-    import: configserver:http://localhost:8889
+    import: optional:configserver:http://localhost:8889
 management:
+  health:
+    rabbit:
+      enabled: false
   endpoints:
     web:
       exposure:
