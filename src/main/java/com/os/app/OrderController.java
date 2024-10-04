@@ -19,7 +19,7 @@ public class OrderController {
 
 	@GetMapping("/loc")
 	public String details() {
-		logger.info("Order Location Trace Request Reached..........");
+		logger.info("Order Location Trace Request Reached.");
 		return locationConfig.getName() != null ? locationConfig.getName() : "KIOL";
 	}
 }
